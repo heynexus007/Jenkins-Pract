@@ -1,5 +1,5 @@
 pipeline{
-    agent { label 'siri'}
+    agent { label 'agent-k'}
     
     stages{
         stage('Clone Repo'){
