@@ -5,7 +5,10 @@ pipeline{
     stages{
         stage('Clone Repo'){
             steps{
-                git url: 'https://github.com/heynexus007/Jenkins-Pract.git', branch: 'main'
+                //git url: 'https://github.com/heynexus007/Jenkins-Pract.git', branch: 'main'
+                script{
+                    clone("https://github.com/heynexus007/Jenkins-Pract.git","main")
+                }
             }
         }
         
