@@ -1,6 +1,6 @@
 pipeline{
-    //agent { label 'agent-k'}
-    agent any
+    agent { label 'agent-k'}
+    //agent any
     
     stages{
         stage('Clone Repo'){
